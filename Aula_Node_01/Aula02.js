@@ -49,9 +49,3 @@ k
     }
     return intNumero;
 }
-
-const reqEntrada = require('readline').createInterface({
-    input: process.stdin,
-    output:process.stdout
-});
-
