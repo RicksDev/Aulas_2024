@@ -10,3 +10,9 @@ function fctCalcDiametro(radius){
 const fctCalcVolume = (radius) => {
     return 4/3 * Math.PI * radius;
 }
+
+reqEntrada.question("Qual o valor do raio que deseja calcular? ", radius => {
+    console.log("O raio é: %d", radius);
+
+    reqEntrada.close();
+})
