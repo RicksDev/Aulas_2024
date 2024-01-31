@@ -1,14 +1,19 @@
+//('readline) é uma biblioteca usada para digitação pelo teclado.
 const reqEntrada = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 
 function fctCalcDiametro(radius){
-    return radius * radius;
+    return radius * 2;
 }
 
 const fctCalcVolume = (radius) => {
-    return 4/3 * Math.PI * radius;
+    return ((4 / 3) * Math.PI) * (radius*radius*radius);
+    //Ou
+    // let calculo;
+    // calculo = ((4/3) * Math.PI) * (Math.pow(radius,3));
+    // return calculo;
 }
 
 reqEntrada.question("Qual o valor do raio que deseja calcular? ", raio => {
@@ -28,4 +33,4 @@ reqEntrada.question("Qual o valor do raio que deseja calcular? ", raio => {
     }
 
     reqEntrada.close();
-})
+});
