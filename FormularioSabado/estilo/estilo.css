@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+
+.container {
+  text-align: center;
+  margin: 250px auto;
+  display: flex;
+}
+.email,
+.senha {
+  border-radius: 5px;
+}
+
+.formulario {
+  background-color: bisque;
+  width: 40%;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imagem {
+  display: block;
+  margin: auto;
+}
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-bottom: 5px;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+}
+
+.section {
+  display: block;
+  padding: 12px 0px;
+}
+.sections {
+  display: block;
+  margin: auto;
+}
+
+.botao {
+  background-color: rgb(100, 211, 100);
+  width: 90px;
+  height: 29px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 10px;
+}
+.botao:hover {
+  background-color: black;
+  color: antiquewhite;
+  transition: 0.8s all ease;
+  cursor: pointer;
+}
