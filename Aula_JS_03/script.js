@@ -7,6 +7,15 @@ const button = document.querySelector("button");
 
 const lista = document.querySelector(".lista");
 
+const allPs = document.querySelectorAll("p");
+
+// Mostra o primeiro item da lista AllPs.
+console.log(allPs[0].innerHTML);
+
+// ForEach
+
+allPs.forEach(item => console.log(item.innerHTML));
+
 // Ele vai lá no HTML e procura a tag "button" e pega ela, executa exatamente o que você mandar aqui.
 
 // Eventos de JavaScript
