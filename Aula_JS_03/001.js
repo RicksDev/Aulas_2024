@@ -15,7 +15,7 @@ const meuButton = document.querySelectorAll("button");
 
 const meuUl = document.querySelectorAll("ul");
 
-meusH1.forEach(item => console.log(item.innerText));
+meusH1.forEach(item => console.log(item.textContent));
 
 meusP.forEach(item => console.log(item));
 
