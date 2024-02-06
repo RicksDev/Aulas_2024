@@ -12,6 +12,8 @@ const myServer = http.createServer((request,response) => {
 // Variáveis criadas sendo inicializada
 
     if (request.url ==='/index'){
+        // Se o "resquest" (o que o usuario digitar) for === (extritamente certo) ao /index, vai mostrar na url o conteudo. Que já foi criado la em cima como uma variável
+
         conteudo = `<h1>Resposta para index</h1>`;
 // Aqui um bloco de condição Se entrar na pagina /index, vai mostar o texto "Resposta para index".
     
@@ -31,12 +33,12 @@ const myServer = http.createServer((request,response) => {
 
     response.writeHead(httpCode, {'Content-Type': 'text/html; charset=utf=8'});
     response.end(conteudo);
-// Não sei
+// o "response" que é o que o servidor vai devolver ao usuário...
 
 });
 
 myServer.listen(3000,() => {
-    //O servidor será aberto na porta 3000
+    //O servidor será aberto na porta 3000 e coloco ele em funcionamento com essa linha 40.
     console.log('Servidor de WEB no endereço http://127.0.0.1:3000/');
     // Aqui mostra no terminal para podermos clicar e abrir a página.
 });
