@@ -9,7 +9,7 @@ const http = require('http');
 const fs = require('fs');
 // fs: permite manipulação de arquivos do tipo (log,txt,html e outros)
 
-// Criar função com nome FileOpena para uso de abertura dos aquivos Html
+// Criar função com nome FileOpen para uso de abertura dos aquivos Html
 const fileOpen = (response, arquivo) => {
 
     // Deve resposta com a mensagem de sucesso e definição de tipo de leitura
@@ -46,6 +46,7 @@ const myServer1 = http.createServer((request, response) => {
             break
         case "/d4":
             fileOpen(response, "index4");
+            break
         case "/d5":
             fileOpen(response, "index3");
             break
