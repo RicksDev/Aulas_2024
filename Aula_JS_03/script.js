@@ -33,7 +33,7 @@ button .addEventListener("click", function(event) {
 
     // o "+=" vai adicionando mais um.
 
-    // Limpando o nome
+    // Limpando o nome toda vez que atuliza a pagina
 
     nome.value = " ";
 });
