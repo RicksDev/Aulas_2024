@@ -53,7 +53,7 @@ const myServer1 = http.createServer((request, response) => {
             break
         default:
             response.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
-            response.end("Erro ao acessar a opção");
+            response.end("<h1 style= 'color:red;'>Erro ao acessar a opção</h1>");
     };
 
 
