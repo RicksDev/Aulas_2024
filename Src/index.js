@@ -9,13 +9,13 @@ const http = require('http');
 const fs = require('fs');
 // fs: permite manipulação de arquivos do tipo (log,txt,html e outros)
 
-// Criar função com nome FileOpena para uso de abertura dos aquivos Html
+// Criar função com nome FileOpen para uso de abertura dos aquivos Html
 const fileOpen = (response, arquivo) => {
 
     // Deve resposta com a mensagem de sucesso e definição de tipo de leitura
     response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
 
-    // __5dirname é uma função interna do NODE que te devolve o caminho(path) da unidade de armazenamento do documento
+    // __dirname é uma função interna do NODE que te devolve o caminho(path) da unidade de armazenamento do documento
     fs.readFile(__dirname + "/View/" + arquivo + ".html", function (err, data) {
 
         // utilizar o método readFile para a leitura do arquivo a ser aberto no browser(navegador);
@@ -26,7 +26,8 @@ const fileOpen = (response, arquivo) => {
 
 // Aqui será criada a constante MyServer para criar o servidor
 const myServer1 = http.createServer((request, response) => {
-    // A primeira variavel será tudo que o usuário vai ser passado do usuario pro navegador e a segunda tudo que o servidor vai devolver pro usuário.... A variável pode ser qualquer nome
+    // A primeira variavel será tudo que o usuário vai ser passado do usuario pro navegador 
+    //e a segunda tudo que o servidor vai devolver pro usuário.... A variável pode ser qualquer nome
 
     // Variável global no projeto com a atribuição da requisição de entrada do endereço do servidor do API.
     var page = request.url;
