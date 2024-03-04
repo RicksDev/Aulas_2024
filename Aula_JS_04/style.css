@@ -1,0 +1,13 @@
+#botao {
+  background-color: red;
+  padding: 15px;
+  width: 100px;
+
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao:hover {
+  background-color: gray;
+  color: black;
+}
