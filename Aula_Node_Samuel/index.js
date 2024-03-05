@@ -19,6 +19,7 @@ const app = express();
 
 const indexView = require("./views/indexView");
 const indexView2 = require("./views/indexView2");
+const indexView3 = require("./views/indexView3");
 
 //Deixar uma pasta pública para ser acessada externamente
 app.use(express.static("public"));
@@ -37,13 +38,14 @@ app.get('/produtos',(req, res, next) =>{
     res.end(indexView2());
 });
 
-app.get('/main', (req, res, next) => {
+app.get('/admin', (req, res, next) => {
     res.end(indexView());
 });
 
 
 
 app.listen(3001, () => {
-    console.log("Servidor no ar com o Express...")
+    console.log("Servidor no ar com o Express... no http://127.0.0.1:3001");
+
 });
 
