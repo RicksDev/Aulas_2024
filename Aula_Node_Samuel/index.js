@@ -20,11 +20,9 @@ const app = express();
 const indexView = require("./views/indexView");
 
 //Deixar uma pasta pública para ser acessada externamente
-
 app.use(express.static("public"));
 
 //Aqui vão as rotas (endpoints)
-
 
 //A partir de agora as rotas serão criadas assim, sem o uso de IF.
 app.get('/student', (req, res, next) => {
