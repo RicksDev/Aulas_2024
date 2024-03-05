@@ -27,11 +27,10 @@ app.use(express.static("public"));
 //Aqui vão as rotas (endpoints)
 
 //A partir de agora as rotas serão criadas assim, sem o uso de IF.
-app.get('/student', (req, res, next) => {
 
-    //res de resposta, vai responder quando tiver o /student
-    res.end(indexView());
-});
+
+//falta de funcionarios
+
 
 app.get('/produtos',(req, res, next) =>{
 
@@ -39,7 +38,7 @@ app.get('/produtos',(req, res, next) =>{
 });
 
 app.get('/admin', (req, res, next) => {
-    res.end(indexView());
+    res.end(indexView3());
 });
 
 
