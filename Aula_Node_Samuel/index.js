@@ -18,6 +18,7 @@ const app = express();
 //Pegando um mode externo -> uma View
 
 const indexView = require("./views/indexView");
+const indexView2 = require("./views/indexView2");
 
 //Deixar uma pasta pública para ser acessada externamente
 app.use(express.static("public"));
@@ -28,6 +29,15 @@ app.use(express.static("public"));
 app.get('/student', (req, res, next) => {
 
     //res de resposta, vai responder quando tiver o /student
+    res.end(indexView());
+});
+
+app.get('/produtos',(req, res, next) =>{
+
+    res.end(indexView2());
+});
+
+app.get('/main', (req, res, next) => {
     res.end(indexView());
 });
 
